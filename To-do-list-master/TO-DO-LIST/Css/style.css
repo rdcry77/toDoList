@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*
+o definirmos ´box-sizing: border-box´, há alteração no cálculo padrão que conhecemos, fazendo com que 
+o navegador passe a considerar a altura e 
+largura do elemento contando o ´padding´ e o ´border´ do elemento.
+*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+/*
+display flex diz que os elementos serão organizados de maneira flexível
+column: Os itens são organizados em forma de colunas iniciando de cima para baixo;
+*/
+.content{
+    width: 100%;
+    max-width: 1200px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+}
+/*
+Usado para moldar o H1
+*/
+.title{
+    margin-top: 18px;
+    font-size: 86px;
+    margin-left: -16px;  
+}
+/*
+utilizado para alinhar os elementos dentro da DIV(o campo de input e botão)
+baseline alinha o botão com base do input
+*/
+.input-button{
+    display: flex;
+    align-items: baseline;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.textfield-js-text-field{
+    margin-top: 32px;
+    width: 100%;
+}
+
+/*
+Molda o campo de input
+*/
+.textfield_input{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: 10px, border, black;
+    background: #ffffff;
+    width: 80%;
+}
+/*
+Aqui é moldada a aparência do botão, como o tamanho, cor e outros
+*/
+.button-js-button--raised{
+    padding: 4px 16px;
+    margin-left: -88px;
+    height: 42px;
+    width: 65px;
+    border-radius: 28px;
+    cursor: pointer;
+    background-color: greenyellow;
+    color: white;
+    font-size: 24px;
+    border: none;
+}
+/*
+Hover é usado para mudar a aparência, quando o cursor está sobre o elemento*/
+.button-js-button--raised:hover{
+    background-color: green;
+    color: greenyellow;
+    transition: 0.5s;
+}
+
+.list{
+    margin-top: 32px;
+    width: 84%;
+}
+.complete-list{
+    width: 100%;
+    margin-top: 16px;
+    padding: 0;
+
+}
+.list_item {
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px solid black;
+    margin-bottom: 24px;
+    font-size: 24px;
+    width: 1000px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+/*
+.list_item > input[type='checkbox']:checked + div {
+    text-decoration: line-through;
+    color: red;
+}
+*/
+.material-icons{
+    cursor: pointer;
+    margin-top: -20px;
+    margin-left: 870px;
+    width: 5px; 
+}
+.material-icons:hover{
+    color: red; 
+}
+.material-symbols-outlined{
+    cursor: pointer;
+    margin-top: 6px;
+    margin-left: -22px;
+    width: 20px;
+    font-family: "Material Symbols Outlined";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    overflow-wrap: normal;
+    direction: ltr;
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}
+.material-symbols-outlined:hover{
+    color: red; 
+}
+.button-js-button--raised completedBtn{
+    text-decoration: line-through;
+    text-decoration-style: double;
+}
+
+
